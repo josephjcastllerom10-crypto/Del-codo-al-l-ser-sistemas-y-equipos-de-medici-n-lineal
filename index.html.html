@@ -185,12 +185,23 @@ header{background:#0b3d73}
 
 <h2>👥 Los investigadores</h2>
 <div class="tm"><div><i>JC</i><b>Joseph Castillero</b><small>Sistemas de medida</small></div><div><i>JJ</i><b>Jasir Jaén</b><small>Historia de la medición</small></div><div><i>RM</i><b>Rafael Murillo</b><small>Equipos de medición</small></div><div><i>MA</i><b>Marcos Arena</b><small>Importancia y normativa</small></div><div><i>JV</i><b>Juan Valderrama</b><small>Errores y buenas prácticas</small></div><div><i>TM</i><b>Tatiana Muñoz</b><small>Planimetría forense y conclusión</small></div></div>
-<h2>💬 Comentarios (<span id="cn">0</span>)</h2>
-<p class="meta">¿Qué opinas del artículo o qué le agregarías? Déjanos tu comentario.</p>
-<input class="w" id="nm" placeholder="Tu nombre" maxlength="40" aria-label="Nombre"><br>
-<textarea id="tx" rows="3" maxlength="600" placeholder="Escribe tu comentario…" aria-label="Comentario"></textarea><br>
-<button id="send">Publicar comentario</button> <span class="meta" id="hint"></span>
-<ul id="cl"></ul>
+<h2>💬 Comentarios</h2>
+<p class="meta">¿Qué opinas del artículo o qué le agregarías? Para comentar necesitas una cuenta gratuita de GitHub.</p>
+<script src="https://giscus.app/client.js"
+        data-repo="josephjcastllerom10-crypto/Del-codo-al-l-ser-sistemas-y-equipos-de-medici-n-lineal"
+        data-repo-id="R_kgDOU6JbJw"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOU6JbJ84DG81R"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="es"
+        crossorigin="anonymous"
+        async>
+</script>
 </article>
 
 <aside>
@@ -208,13 +219,6 @@ function cv(){const v=parseFloat($('#v').value.replace(',','.')),u=$('#u').value
 $('#v').oninput=$('#u').onchange=cv;cv();
 $('#wa').href='https://wa.me/?text='+encodeURIComponent('Del codo al láser: medición lineal '+location.href);
 $('#cp').onclick=async()=>{try{await navigator.clipboard.writeText(location.href);$('#cp').textContent='¡Copiado!'}catch(e){}};
-let store=null,local=[];
-function render(l){const ul=$('#cl');ul.textContent='';[...l].sort((a,b)=>a.t-b.t).forEach(c=>{const li=document.createElement('li'),b=document.createElement('b'),s=document.createElement('small'),p=document.createElement('p');b.textContent=c.n;s.textContent=' · '+new Date(c.t).toLocaleDateString('es');p.textContent=c.m;li.append(b,s,p);ul.append(li)});$('#cn').textContent=l.length}
-(async()=>{try{const db=window.claude&&await claude.use('db');if(db){store=db.collection('comments');store.orderBy('t').onSnapshot(s=>render(s.docs.map(d=>d.data())),()=>{store=null})}}catch(e){}
-if(!store){try{local=JSON.parse(localStorage.getItem('c')||'[]')}catch(e){}render(local);$('#hint').textContent='Modo local: los comentarios solo se ven en este dispositivo.'}})();
-$('#send').onclick=async()=>{const n=$('#nm').value.trim().slice(0,40)||'Anónimo',m=$('#tx').value.trim().slice(0,600);if(!m)return;const c={n,m,t:Date.now()};
-if(store){try{await store.add(c);$('#tx').value='';return}catch(e){store=null}}
-local.push(c);try{localStorage.setItem('c',JSON.stringify(local))}catch(e){}render(local);$('#tx').value='';$('#hint').textContent='Guardado solo en este dispositivo (los comentarios compartidos requieren publicar la página con base de datos).'};
 const Q=[['¿Cuántos milímetros tiene exactamente una pulgada?',['24,5','25,4','26,4'],1,'Desde 1959 la pulgada se define como 25,4 mm exactos.'],['¿A qué temperatura de referencia se especifican las dimensiones (ISO 1)?',['20 °C','0 °C','25 °C'],0,'ISO 1:2016 fija 20 °C, porque los materiales se dilatan con la temperatura.'],['¿Qué instrumento elegirías para medir el diámetro de un alambre con resolución de 0,01 mm?',['Cinta métrica','Escuadra','Micrómetro'],2,'La cinta resuelve 1 mm; el micrómetro llega a 0,01 mm.'],['El metro actual se define a partir de…',['La velocidad de la luz','Una barra de platino','El kriptón-86'],0,'Desde 1983 depende de la velocidad de la luz; la barra y el kriptón fueron etapas anteriores.'],['En un pie de rey de 0,02 mm, el cero pasó el 23 y coincide la línea 14. ¿Cuánto mide?',['23,14 mm','23,28 mm','37,00 mm'],1,'23 + 14 × 0,02 = 23,28 mm.'],['A escala 1:50, un error de 1 mm en el dibujo equivale en la realidad a…',['5 mm','5 cm','50 cm'],1,'1 mm × 50 = 50 mm = 5 cm.']];
 let sc=0,dn=0;const R=document.createElement('p');R.className='meta';R.setAttribute('aria-live','polite');
 $('#qz').append(...Q.map(([q,o,a,e])=>{const d=document.createElement('div'),p=document.createElement('p');p.textContent=q;d.append(p);o.forEach((t,i)=>{const b=document.createElement('button');b.textContent=t;b.onclick=()=>{const bs=d.querySelectorAll('button');bs.forEach(x=>x.disabled=true);b.classList.add(i==a?'ok':'no');bs[a].classList.add('ok');const s=document.createElement('small');s.style.display='block';s.textContent=(i==a?'✔ ':'✘ ')+e;d.append(s);if(i==a)sc++;if(++dn==Q.length)R.textContent='Puntaje: '+sc+' de '+Q.length};d.append(b)});return d}),R);
