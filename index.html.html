@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Del codo al láser: sistemas y equipos de medición lineal</title>
+<style>
+:root{--bg:#f6f5f1;--fg:#1d2330;--mut:#5b6474;--card:#fff;--ac:#0b5cad;--bd:#d9dce3;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14171d;--fg:#e8eaf0;--mut:#9aa3b2;--card:#1d2129;--ac:#6cb2ff;--bd:#343a46}}
+:root[data-theme="dark"]{--bg:#14171d;--fg:#e8eaf0;--mut:#9aa3b2;--card:#1d2129;--ac:#6cb2ff;--bd:#343a46}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{background:var(--ac);color:#fff;padding:14px 18px}
+header b{font:700 1.1rem Georgia,serif;letter-spacing:.3px}
+header span{display:block;font-size:.8rem;opacity:.85}
+.wrap{max-width:1000px;margin:0 auto;padding:18px;display:grid;gap:22px;grid-template-columns:minmax(0,1fr)}
+@media(min-width:820px){.wrap{grid-template-columns:minmax(0,1fr) 260px}}
+article,aside section{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:18px}
+aside section{margin-bottom:14px;padding:14px;font-size:.92rem}
+h1{font:700 1.9rem/1.2 Georgia,serif;margin:.2em 0}
+h2{font:700 1.35rem/1.3 Georgia,serif;margin:1.6em 0 .4em;color:var(--ac)}
+h3{font-size:1rem;margin:0 0 .5em}
+aside h3{color:var(--ac)}
+.meta{color:var(--mut);font-size:.85rem}
+.tag{display:inline-block;border:1px solid var(--bd);border-radius:99px;padding:1px 10px;margin:2px 2px 2px 0;font-size:.78rem;color:var(--mut)}
+.box{border-left:4px solid var(--ac);background:var(--bg);padding:10px 14px;border-radius:0 8px 8px 0;margin:14px 0}
+figure{margin:16px 0}figcaption{font-size:.8rem;color:var(--mut);text-align:center}
+svg{width:100%;height:auto;color:var(--fg)}
+.sc{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.88rem;min-width:520px}
+th,td{border:1px solid var(--bd);padding:6px 8px;text-align:left}th{background:var(--bg)}
+ol.tl{list-style:none;padding:0;margin:12px 0;border-left:3px solid var(--ac)}
+ol.tl li{padding:0 0 12px 14px;position:relative}
+ol.tl li:before{content:"";position:absolute;left:-8px;top:8px;width:13px;height:13px;border-radius:50%;background:var(--ac)}
+ol.tl b{color:var(--ac)}
+input,select,textarea,button{font:inherit;color:var(--fg);background:var(--bg);border:1px solid var(--bd);border-radius:8px;padding:7px 10px}
+textarea,input.w{width:100%}
+button,.btn{background:var(--ac);color:#fff;border:0;cursor:pointer;text-decoration:none;display:inline-block;margin:2px 0}
+.btn{padding:7px 10px;border-radius:8px;font-size:.88rem}
+#cl{list-style:none;padding:0}#cl li{border-top:1px solid var(--bd);padding:10px 0}#cl p{margin:.2em 0}
+a{color:var(--ac)}ul.s{padding-left:18px;margin:0}
+header{background:#0b3d73}
+.hero{background:#0b3d73;color:#fff;padding:22px 18px 30px;position:relative;margin:-18px -18px 14px;border-radius:10px 10px 0 0}
+.hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:12px;background:linear-gradient(90deg,#fff 2px,transparent 0) 0 100%/40px 12px repeat-x,linear-gradient(90deg,#fff 1px,transparent 0) 0 100%/8px 6px repeat-x}
+.hero .tag{color:#fff;border-color:#fff9}.hero .meta{color:#fff;opacity:.92;margin:.3em 0}
+.g,.tm{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.g div{background:var(--bg);border:1px dashed var(--ac);border-radius:10px;padding:10px 12px;font-size:.9rem}.g b{color:var(--ac)}
+.tm div{border:1px solid var(--bd);border-radius:10px;padding:8px 12px;background:var(--bg);overflow:hidden}.tm small{display:block;color:var(--mut)}
+.tm i{float:left;margin-right:10px;width:38px;height:38px;border-radius:50%;background:#0b5cad;color:#fff;font-style:normal;font-weight:700;display:grid;place-items:center;font-size:.8rem}
+.qz>div{background:var(--bg);border-radius:10px;padding:8px 12px;margin-bottom:8px}.qz p{margin:.2em 0 .4em;font-weight:600}
+.qz button{background:var(--card);color:var(--fg);border:1px solid var(--ac);margin:3px 4px 3px 0}
+.qz .ok{background:#2e8b57;color:#fff;border-color:#2e8b57}.qz .no{background:#c0392b;color:#fff;border-color:#c0392b}
+</style>
+</head>
+<body>
+<header><b>Blog Forense · Dibujo Técnico</b><span>Metrología y medición lineal</span></header>
+<div class="wrap">
+<article>
+<div class="hero"><span class="tag">Metrología</span><span class="tag">Dibujo técnico</span><span class="tag">Planimetría forense</span>
+<h1>📏 Del codo al láser: sistemas y equipos de medición lineal</h1>
+<p class="meta"><em>Más de 4 000 años para responder una sola pregunta: ¿cuánto mide esto?</em></p>
+<p class="meta">Por Joseph Castillero, Jasir Jaén, Rafael Murillo, Marcos Arena, Juan Valderrama y Tatiana Muñoz · Lectura: 10 min</p></div>
+<p class="box">🕵️ <b>Imagina la escena:</b> un técnico forense llega al lugar de los hechos. Hay una huella de calzado, un casquillo y unos metros entre la puerta y la víctima. Cada dato vale lo que valga su medición: si el número falla, la conclusión también. Hoy recorremos cómo la humanidad aprendió a medir bien, desde el codo de un faraón hasta un rayo láser.</p>
+
+<p>En 1999 la sonda <em>Mars Climate Orbiter</em> de la NASA se perdió al acercarse a Marte. La investigación concluyó que un equipo había entregado datos de impulso en unidades inglesas (libra-fuerza por segundo) mientras que otro software esperaba unidades métricas (newton por segundo) (MCOMIB, 1999). Un error de unidades costó una misión completa. Medir bien no es un detalle: es la base de la ingeniería, la industria y hasta de la investigación forense.</p>
+
+<h2>1. Historia y evolución de la medición lineal</h2>
+<p>Las primeras unidades salieron del cuerpo humano: el codo, el palmo, el pie y la pulgada. El problema era evidente, ya que cada pueblo y cada época tenía su propia versión. El codo real egipcio, por ejemplo, medía cerca de 52,3 cm, y la vara castellana rondaba los 83,6 cm. Antes de la Revolución Francesa circulaban cientos de miles de denominaciones locales, lo que frenaba el comercio y favorecía los abusos (Kula, 1986; Alder, 2002).</p>
+<ol class="tl">
+<li><b>1631</b> · Pierre Vernier describe la escala auxiliar que hoy llamamos <em>nonio</em> o <em>vernier</em>.</li>
+<li><b>1791–1799</b> · Francia define el metro como una diezmillonésima parte del cuadrante del meridiano terrestre y fabrica el patrón de platino de 1799 (Alder, 2002).</li>
+<li><b>1848–1867</b> · Palmer patenta el tornillo micrométrico de mano; Brown &amp; Sharpe populariza el calibre vernier (1851) y el micrómetro de bolsillo (1867).</li>
+<li><b>1875 y 1889</b> · La Convención del Metro crea la Oficina Internacional de Pesas y Medidas (BIPM) y se adopta el prototipo internacional de platino-iridio (BIPM, 2019).</li>
+<li><b>1896–1901</b> · Carl E. Johansson desarrolla los bloques patrón, base de la exactitud en el taller moderno.</li>
+<li><b>1959</b> · Se acuerda que 1 pulgada = 25,4 mm exactos; también aparece la primera máquina de medición por coordenadas (MMC) (Bosch, 1995).</li>
+<li><b>1960 y 1983</b> · El metro pasa a basarse en la longitud de onda del kriptón-86 y luego en la velocidad de la luz: la distancia que recorre la luz en el vacío en 1/299 792 458 s.</li>
+<li><b>2019</b> · El SI se redefine con constantes fijas de la naturaleza; el metro sigue ligado a la velocidad de la luz (BIPM, 2019).</li>
+</ol>
+
+<div class="g"><div><b>⚡ Luz y metro</b><br>La luz recorre casi 30 cm en un nanosegundo; por eso el metro actual se define con su velocidad.</div><div><b>🧵 Un cabello</b><br>Mide unos 70 µm (varía según la persona): un micrómetro de 0,01 mm lo divide en unas 7 partes.</div><div><b>🏛️ Barra jubilada</b><br>El prototipo de platino-iridio de 1889 ya no define el metro; es una pieza histórica custodiada por el BIPM.</div></div>
+<h2>2. Sistemas de medida</h2>
+<p><b>Sistema Internacional (SI).</b> Es el sistema oficial en casi todo el mundo. Su unidad de longitud es el metro (m), con múltiplos decimales (km, cm, mm, µm) que facilitan los cálculos. <b>Sistema anglosajón (USC/imperial).</b> Usa pulgada, pie y yarda (las variantes estadounidense e imperial coinciden en estas tres), y sigue vigente en la industria de varios países, por lo que un técnico debe moverse con soltura entre ambos. Desde 1959 la pulgada se define con exactitud a partir del metro, así que ambos sistemas son totalmente convertibles.</p>
+<div class="box"><b>🔧 Convertidor interactivo</b><br>
+<input id="v" value="1" inputmode="decimal" size="8" aria-label="Valor"> <select id="u"><option>mm</option><option>cm</option><option>m</option><option selected>in</option><option>ft</option></select>
+<div id="o" style="margin-top:6px;font-weight:600"></div></div>
+
+<h2>3. Equipos para la medición lineal</h2>
+<p>Se clasifican según cómo miden: <b>directos</b> (comparan la pieza con una escala), <b>por comparación</b> (detectan la diferencia respecto a un patrón) y <b>de referencia</b> (bloques patrón y calibres fijos). A esto se suman los equipos ópticos y electrónicos.</p>
+<figure><svg viewBox="0 0 360 160" role="img" aria-label="Partes de un calibre vernier" font-size="11" fill="currentColor">
+<g stroke="currentColor" fill="var(--card)"><rect x="10" y="60" width="330" height="26" rx="2"/><rect x="10" y="86" width="14" height="44"/><rect x="10" y="30" width="10" height="30"/><rect x="150" y="54" width="70" height="38"/><rect x="150" y="92" width="14" height="38"/><rect x="150" y="30" width="10" height="24"/><rect x="330" y="72" width="26" height="4"/></g>
+<path d="M20 64H330" stroke="currentColor" stroke-width="8" stroke-dasharray="1 9"/>
+<circle cx="200" cy="48" r="6" fill="var(--ac)"/>
+<g stroke="var(--mut)"><path d="M200 24v18M225 112l-20-26M345 78v14M14 19v11M14 132v8M255 36l10 24"/></g>
+<text x="8" y="16">Mordazas interiores</text><text x="8" y="152">Mordazas exteriores</text><text x="165" y="20">Tornillo de fijación</text><text x="228" y="122">Nonio (vernier)</text><text x="352" y="106" text-anchor="end">Varilla de profundidad</text><text x="250" y="32">Escala principal</text>
+</svg><figcaption>Figura 1. Partes de un pie de rey (calibre vernier). Esquema de elaboración propia.</figcaption></figure>
+<div class="sc"><table>
+<tr><th>Instrumento</th><th>Resolución típica</th><th>Uso principal</th></tr>
+<tr><td>Regla / cinta métrica</td><td>1 mm</td><td>Medidas generales, trazado, escenas</td></tr>
+<tr><td>Pie de rey (vernier o digital)</td><td>0,02 – 0,05 mm</td><td>Exteriores, interiores y profundidades</td></tr>
+<tr><td>Micrómetro</td><td>0,01 mm (0,001 con nonio)</td><td>Diámetros y espesores de alta precisión</td></tr>
+<tr><td>Reloj comparador</td><td>0,01 mm</td><td>Desviaciones, planitud y excentricidad</td></tr>
+<tr><td>Bloques patrón</td><td>Submicrométrica</td><td>Referencia y calibración de otros equipos</td></tr>
+<tr><td>Medidor láser de distancia</td><td>1 – 3 mm</td><td>Obras y levantamientos de largo alcance</td></tr>
+<tr><td>Rueda de medición (odómetro)</td><td>Centímetros</td><td>Distancias largas sobre el terreno</td></tr>
+<tr><td>Estación total / escáner láser 3D</td><td>Milimétrica</td><td>Levantamiento de escenas y planos</td></tr>
+<tr><td>Máquina de medición por coordenadas</td><td>Micras</td><td>Inspección 3D de piezas complejas</td></tr>
+</table></div>
+<p class="meta">Valores orientativos; la resolución exacta depende del modelo y del fabricante.</p>
+
+<h3>Medición láser y en escena: cómo funciona y dónde falla</h3>
+<p>Un distanciómetro láser emite un haz y calcula la distancia a partir del tiempo que tarda en volver (tiempo de vuelo) o del desfase de una señal modulada. Como la luz recorre unos 30 cm por nanosegundo, necesita electrónica muy rápida. Sus límites: superficies muy brillantes o transparentes, luz solar intensa, polvo o lluvia, y un haz no perpendicular a la superficie. Conviene contrastarlo con una cinta en alguna medida de control.</p>
+<p>La <b>cinta</b> de tela o fibra se estira y la de acero se comba si no se tensa bien; la <b>rueda de medición</b> pierde exactitud en terreno irregular o si resbala. Por eso se registra qué instrumento se usó y en qué condiciones.</p>
+<div class="box"><b>🔍 Aprende a leer un pie de rey (resolución 0,02 mm)</b><ol style="margin:.4em 0 0;padding-left:20px"><li>Mira dónde pasa el cero del nonio sobre la escala principal. Si pasó el 23: <b>23 mm</b>.</li><li>Busca qué línea del nonio coincide con una de la escala principal. Si es la número 14…</li><li>Multiplica: 14 × 0,02 = <b>0,28 mm</b>.</li><li>Suma: 23 + 0,28 = <b>23,28 mm</b>.</li></ol><p style="margin:.5em 0 0">En un micrómetro de 0,01 mm: escala fija (7,5 mm) + tambor (23 × 0,01 = 0,23 mm) = <b>7,73 mm</b>.</p></div>
+<h2>4. Importancia de medir bien</h2>
+<ul>
+<li><b>Intercambiabilidad:</b> piezas hechas en lugares distintos encajan porque comparten las mismas medidas y tolerancias.</li>
+<li><b>Calidad y seguridad:</b> una tolerancia mal verificada puede provocar fallas mecánicas y accidentes.</li>
+<li><b>Comercio y costos:</b> unidades comunes permiten comprar, vender y producir sin ambigüedades ni desperdicio.</li>
+<li><b>Evidencia confiable:</b> en ciencia forense, una medida documentada y trazable puede sostener o descartar una hipótesis.</li>
+</ul>
+
+<h2>5. Normativa y trazabilidad</h2>
+<ul>
+<li><b>SI y BIPM:</b> definen el metro y la jerarquía de patrones (BIPM, 2019).</li>
+<li><b>ISO 1:2016:</b> fija 20 °C como temperatura de referencia para especificar y verificar dimensiones (ISO, 2016).</li>
+<li><b>ISO 3611 e ISO 13385-1:</b> establecen el diseño y las características metrológicas de micrómetros y calibres (ISO, 2010; ISO, 2019). También existen equivalentes nacionales como DIN y ASME.</li>
+<li><b>ISO/IEC 17020:</b> requisitos para organismos de inspección, que suelen usarse como referencia en la inspección de escenas (ISO/IEC, 2012).</li>
+<li><b>ISO/IEC 17025:</b> requisitos de competencia de los laboratorios de calibración (ISO/IEC, 2017).</li>
+<li><b>ISO 9001 (apartado 7.1.5) e ISO 10012:</b> (ISO, 2015; ISO, 2003) exigen controlar y calibrar los equipos de medición dentro de un sistema de calidad.</li>
+</ul>
+<p>La <b>trazabilidad</b> es la cadena ininterrumpida de calibraciones que une un instrumento con el patrón primario del metro:</p>
+<figure><svg viewBox="0 0 320 190" role="img" aria-label="Cadena de trazabilidad" font-size="12" text-anchor="middle" fill="currentColor">
+<g stroke="var(--ac)" fill="var(--card)"><rect x="10" y="4" width="300" height="36" rx="6"/><rect x="10" y="50" width="300" height="36" rx="6"/><rect x="10" y="96" width="300" height="36" rx="6"/><rect x="10" y="142" width="300" height="36" rx="6"/></g>
+<text x="160" y="27">Definición del metro (SI · BIPM)</text><text x="160" y="73">Instituto nacional de metrología</text><text x="160" y="119">Laboratorio de calibración acreditado</text><text x="160" y="165">Tu instrumento en el taller o laboratorio</text>
+<g fill="var(--ac)"><text x="160" y="48">↓</text><text x="160" y="94">↓</text><text x="160" y="140">↓</text></g>
+</svg><figcaption>Figura 2. Cadena de trazabilidad metrológica. Esquema de elaboración propia.</figcaption></figure>
+<p>En Panamá, el eslabón nacional lo ocupa el Centro Nacional de Metrología (CENAMEP AIP).</p>
+
+<h2>6. Errores frecuentes y buenas prácticas</h2>
+<ul>
+<li><b>Temperatura:</b> el acero se dilata cerca de 11,5 µm por metro y por °C; en una pieza de 100 mm eso es ≈1,15 µm por cada grado de diferencia respecto a 20 °C.</li>
+<li><b>Paralaje y fuerza de medición:</b> mira de frente la escala y usa la fricción o el trinquete del micrómetro para presionar siempre igual.</li>
+<li><b>Cero y limpieza:</b> verifica el cero antes de medir y limpia las caras de contacto.</li>
+<li><b>Principio de Abbe:</b> alinear la escala con la línea de medición reduce errores. El micrómetro lo cumple; el pie de rey no (su escala queda desplazada respecto a las mordazas), así que exige más cuidado.</li>
+<li><b>Calibración periódica</b> y almacenamiento cuidadoso del instrumento.</li>
+</ul>
+
+<div class="box"><b>🎯 No es lo mismo…</b><br><b>Resolución:</b> la división más pequeña que muestra el instrumento. <b>Exactitud:</b> qué tan cerca está la medida del valor verdadero. <b>Precisión:</b> qué tan cercanos entre sí son los resultados de mediciones repetidas (la repetibilidad es la precisión en condiciones idénticas). <b>Incertidumbre:</b> el margen de duda que acompaña a todo resultado (JCGM, 2012). Un instrumento puede ser preciso pero inexacto si está mal calibrado.</div>
+<h2>7. Aplicaciones</h2>
+<p><b>Industria y mecánica:</b> control de ajustes y tolerancias en piezas. <b>Construcción:</b> replanteo, niveles y cotas con cintas y distanciómetros láser. <b>Dibujo técnico:</b> toda cota de un plano nace de una medición real. <b>Ciencia forense:</b> la posición de la evidencia se fija con cinta o láser mediante triangulación o coordenadas desde puntos fijos; las marcas de herramienta o los casquillos se miden con calibre; y las fotografías llevan una escala (como la escala en L ABFO n.º 2) junto a la evidencia, para poder medir después sobre la imagen.</p>
+<div class="box"><b>📐 Conexión con la planimetría forense</b><br>Un plano o croquis de escena es, en el fondo, un conjunto de medidas lineales llevadas al papel; por eso este tema es su base.
+<ul class="s" style="margin-top:.4em">
+<li><b>Métodos de ubicación:</b> las coordenadas (distancias perpendiculares a una línea base), la triangulación (distancias desde dos puntos fijos) y las coordenadas polares (distancia y ángulo) dependen de medir longitudes con cinta, rueda o distanciómetro (Fisher &amp; Fisher, 2012).</li>
+<li><b>Escala del plano:</b> a escala 1:50, 1 cm dibujado equivale a 50 cm reales, y un error de 1 mm en el dibujo representa 5 cm en la realidad. La precisión de la medida debe ser coherente con la escala.</li>
+<li><b>Una sola unidad:</b> anota en el croquis si usaste metros o centímetros; es la lección del <em>Mars Climate Orbiter</em> aplicada a la escena.</li>
+<li><b>Buenas prácticas:</b> medir desde puntos fijos (esquinas, postes), verificar con una segunda persona y registrar qué instrumento se usó.</li>
+<li><b>Incertidumbre y escala:</b> con una cinta de ±1 cm, a 1:50 el error en el papel es 0,2 mm, menor que el grosor del trazo; a 1:10 ya sería 1 mm y se notaría.</li>
+<li><b>Documentación:</b> anota el instrumento, su fecha de calibración, las condiciones, quién midió, y fotografía la evidencia con escala.</li>
+<li><b>Tecnología:</b> la estación total y el escáner láser 3D automatizan el levantamiento, pero se basan en los mismos principios y también requieren calibración.</li>
+</ul></div>
+
+<h2>8. 🎮 Pon a prueba tu ojo de metrólogo</h2>
+<div class="qz" id="qz"></div>
+<h2>Conclusión</h2>
+<p>La medición lineal pasó de depender del cuerpo humano a apoyarse en constantes universales. Conocer el sistema de unidades, escoger el instrumento adecuado, respetar la norma y mantener la trazabilidad es lo que convierte un número en un dato confiable.</p>
+
+<h2>Referencias</h2>
+<ul class="s" style="font-size:.88rem">
+<li>Alder, K. (2002). <em>The measure of all things: The seven-year odyssey and hidden error that transformed the world</em>. Free Press.</li>
+<li>Bosch, J. A. (Ed.). (1995). <em>Coordinate measuring machines and systems</em>. Marcel Dekker.</li>
+<li>Bureau International des Poids et Mesures [BIPM]. (2019). <em>The International System of Units (SI)</em> (9.ª ed.). BIPM.</li>
+<li>Fisher, B. A. J., &amp; Fisher, D. R. (2012). <em>Techniques of crime scene investigation</em> (8.ª ed.). CRC Press.</li>
+<li>International Organization for Standardization [ISO]. (2003). <em>ISO 10012:2003 Measurement management systems — Requirements for measurement processes and measuring equipment</em>. ISO.</li>
+<li>ISO. (2010). <em>ISO 3611:2010 Micrometers for external measurements</em>. ISO.</li>
+<li>ISO. (2015). <em>ISO 9001:2015 Quality management systems — Requirements</em>. ISO.</li>
+<li>ISO. (2016). <em>ISO 1:2016 Geometrical product specifications (GPS) — Standard reference temperature</em>. ISO.</li>
+<li>ISO. (2019). <em>ISO 13385-1:2019 Calipers — Design and metrological characteristics</em>. ISO.</li>
+<li>ISO/IEC. (2012). <em>ISO/IEC 17020:2012 Conformity assessment — Requirements for the operation of various types of bodies performing inspection</em>. ISO.</li>
+<li>ISO/IEC. (2017). <em>ISO/IEC 17025:2017 General requirements for the competence of testing and calibration laboratories</em>. ISO.</li>
+<li>Joint Committee for Guides in Metrology [JCGM]. (2012). <em>JCGM 200:2012 International vocabulary of metrology — Basic and general concepts and associated terms (VIM)</em> (3.ª ed.). BIPM.</li>
+<li>Kula, W. (1986). <em>Measures and men</em>. Princeton University Press.</li>
+<li>Mars Climate Orbiter Mishap Investigation Board [MCOMIB]. (1999). <em>Phase I report</em>. NASA.</li>
+</ul>
+
+<h2>👥 Los investigadores</h2>
+<div class="tm"><div><i>JC</i><b>Joseph Castillero</b><small>Sistemas de medida</small></div><div><i>JJ</i><b>Jasir Jaén</b><small>Historia de la medición</small></div><div><i>RM</i><b>Rafael Murillo</b><small>Equipos de medición</small></div><div><i>MA</i><b>Marcos Arena</b><small>Importancia y normativa</small></div><div><i>JV</i><b>Juan Valderrama</b><small>Errores y buenas prácticas</small></div><div><i>TM</i><b>Tatiana Muñoz</b><small>Planimetría forense y conclusión</small></div></div>
+<h2>💬 Comentarios (<span id="cn">0</span>)</h2>
+<p class="meta">¿Qué opinas del artículo o qué le agregarías? Déjanos tu comentario.</p>
+<input class="w" id="nm" placeholder="Tu nombre" maxlength="40" aria-label="Nombre"><br>
+<textarea id="tx" rows="3" maxlength="600" placeholder="Escribe tu comentario…" aria-label="Comentario"></textarea><br>
+<button id="send">Publicar comentario</button> <span class="meta" id="hint"></span>
+<ul id="cl"></ul>
+</article>
+
+<aside>
+<section><h3>Sobre este blog</h3>Investigación escrita sobre medición lineal, dibujo técnico y normas, con enfoque en planimetría forense.</section>
+<section><h3>Categorías</h3><ul class="s"><li>Metrología</li><li>Instrumentos de medición</li><li>Historia de la técnica</li><li>Normativa</li><li>Planimetría forense</li></ul></section>
+<section><h3>Etiquetas</h3><span class="tag">metro</span><span class="tag">SI</span><span class="tag">vernier</span><span class="tag">micrómetro</span><span class="tag">ISO</span><span class="tag">trazabilidad</span><span class="tag">calibración</span></section>
+<section><h3>Próximas entradas</h3><ul class="s"><li>Dibujo técnico tradicional vs. automatizado</li><li>Elementos y normas del dibujo técnico (UNE, ISO)</li></ul></section>
+<section><h3>Compartir</h3><a class="btn" id="wa" href="#" target="_blank" rel="noopener">WhatsApp</a> <button id="cp">Copiar enlace</button></section>
+</aside>
+</div>
+<script>
+const $=s=>document.querySelector(s);
+const F={mm:1,cm:10,m:1000,'in':25.4,ft:304.8};
+function cv(){const v=parseFloat($('#v').value.replace(',','.')),u=$('#u').value;$('#o').textContent=isNaN(v)?'':Object.keys(F).filter(k=>k!=u).map(k=>(v*F[u]/F[k]).toLocaleString('es',{maximumFractionDigits:4})+' '+k).join(' · ')}
+$('#v').oninput=$('#u').onchange=cv;cv();
+$('#wa').href='https://wa.me/?text='+encodeURIComponent('Del codo al láser: medición lineal '+location.href);
+$('#cp').onclick=async()=>{try{await navigator.clipboard.writeText(location.href);$('#cp').textContent='¡Copiado!'}catch(e){}};
+let store=null,local=[];
+function render(l){const ul=$('#cl');ul.textContent='';[...l].sort((a,b)=>a.t-b.t).forEach(c=>{const li=document.createElement('li'),b=document.createElement('b'),s=document.createElement('small'),p=document.createElement('p');b.textContent=c.n;s.textContent=' · '+new Date(c.t).toLocaleDateString('es');p.textContent=c.m;li.append(b,s,p);ul.append(li)});$('#cn').textContent=l.length}
+(async()=>{try{const db=window.claude&&await claude.use('db');if(db){store=db.collection('comments');store.orderBy('t').onSnapshot(s=>render(s.docs.map(d=>d.data())),()=>{store=null})}}catch(e){}
+if(!store){try{local=JSON.parse(localStorage.getItem('c')||'[]')}catch(e){}render(local);$('#hint').textContent='Modo local: los comentarios solo se ven en este dispositivo.'}})();
+$('#send').onclick=async()=>{const n=$('#nm').value.trim().slice(0,40)||'Anónimo',m=$('#tx').value.trim().slice(0,600);if(!m)return;const c={n,m,t:Date.now()};
+if(store){try{await store.add(c);$('#tx').value='';return}catch(e){store=null}}
+local.push(c);try{localStorage.setItem('c',JSON.stringify(local))}catch(e){}render(local);$('#tx').value='';$('#hint').textContent='Guardado solo en este dispositivo (los comentarios compartidos requieren publicar la página con base de datos).'};
+const Q=[['¿Cuántos milímetros tiene exactamente una pulgada?',['24,5','25,4','26,4'],1,'Desde 1959 la pulgada se define como 25,4 mm exactos.'],['¿A qué temperatura de referencia se especifican las dimensiones (ISO 1)?',['20 °C','0 °C','25 °C'],0,'ISO 1:2016 fija 20 °C, porque los materiales se dilatan con la temperatura.'],['¿Qué instrumento elegirías para medir el diámetro de un alambre con resolución de 0,01 mm?',['Cinta métrica','Escuadra','Micrómetro'],2,'La cinta resuelve 1 mm; el micrómetro llega a 0,01 mm.'],['El metro actual se define a partir de…',['La velocidad de la luz','Una barra de platino','El kriptón-86'],0,'Desde 1983 depende de la velocidad de la luz; la barra y el kriptón fueron etapas anteriores.'],['En un pie de rey de 0,02 mm, el cero pasó el 23 y coincide la línea 14. ¿Cuánto mide?',['23,14 mm','23,28 mm','37,00 mm'],1,'23 + 14 × 0,02 = 23,28 mm.'],['A escala 1:50, un error de 1 mm en el dibujo equivale en la realidad a…',['5 mm','5 cm','50 cm'],1,'1 mm × 50 = 50 mm = 5 cm.']];
+let sc=0,dn=0;const R=document.createElement('p');R.className='meta';R.setAttribute('aria-live','polite');
+$('#qz').append(...Q.map(([q,o,a,e])=>{const d=document.createElement('div'),p=document.createElement('p');p.textContent=q;d.append(p);o.forEach((t,i)=>{const b=document.createElement('button');b.textContent=t;b.onclick=()=>{const bs=d.querySelectorAll('button');bs.forEach(x=>x.disabled=true);b.classList.add(i==a?'ok':'no');bs[a].classList.add('ok');const s=document.createElement('small');s.style.display='block';s.textContent=(i==a?'✔ ':'✘ ')+e;d.append(s);if(i==a)sc++;if(++dn==Q.length)R.textContent='Puntaje: '+sc+' de '+Q.length};d.append(b)});return d}),R);
+</script>
+</body>
+</html>
